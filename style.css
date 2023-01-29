@@ -1,0 +1,236 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primaryColor : rgb(94, 176, 224);
+    --wood : rgb(114, 82, 12);
+    --wooddark:rgb(94, 66, 8);
+    --base : green;
+    --basedark : rgb(6, 94, 6); 
+    --bush:green;
+    --bushdark:rgb(6, 94, 6);
+    --cloud :  rgb(155, 153, 153);
+    --clouddark :rgb(141, 133, 133) ;
+}
+
+body {
+    background-color: var(--primaryColor);
+    overflow: hidden;
+}
+
+.clouds {
+    display: flex;
+    flex-wrap:wrap-reverse;
+    gap: 70px;
+    position: relative;
+    justify-content: space-around;
+}
+.cloud {
+    display: flex;
+    justify-content: center;
+    border-radius: 50%;
+    position: relative;
+    top: 80px;
+    background-color: var(--clouddark);
+    width: 200px;
+    height: 80px;
+}
+.c-a {
+    bottom: 30px;
+    position: relative;
+    border-radius: 50%;
+    background-color:var(--clouddark) ;
+    width: 80px;
+    height: 80px;
+}
+.c-b {
+    position: absolute;
+    bottom: 50px;
+    border-radius: 50%;
+    background-color: var(--clouddark);
+    width: 100px;
+    height: 100px;
+}
+.c-c {
+    
+    position: relative;
+    bottom: 30px;
+    border-radius: 50%;
+    background-color: var(--clouddark);
+    width: 80px;
+    height: 80px;
+}
+
+.trees {
+    display: flex;
+    position: relative;
+    bottom: 30vh ;
+    justify-content: space-evenly;
+}
+.tree {
+    display: flex;
+    justify-content: center;
+}
+
+.wood {
+    position: absolute;
+    top: 80vh;
+    background-color: var(--wood);
+    width: 30px;
+    height: 130px;
+}
+.wooddark {
+    position: absolute;
+    background-color: var(--wooddark);
+}
+#a {
+    width: 5px;
+        height: 130px;
+}
+#b {
+    top: 4px;
+    width: 30px;
+    border-radius: 30%;
+    height: 20px;
+}
+#c {
+    left: 27px;
+    width: 3px;
+    height: 130px;
+}
+
+
+
+
+.t {
+    position: absolute;
+    border-radius: 40%;
+}
+.base-a {
+    background-color: var(--basedark);
+    width: 200px;
+    height: 50px;
+    top: 75.5vh;
+}
+.base-b {
+    background-color: var(--base);
+    width: 200px;
+    height: 50px;   
+    top: 74.5vh;
+}
+.base-c {
+    background-color: var(--basedark);
+    width: 170px;
+    height: 40px;
+    top: 74.5vh;
+}
+.base-d {
+    background-color: var(--base);
+    width: 170px;
+    height: 40px;
+    top: 73.5vh;
+}
+.base-e{
+    background-color: var(--basedark);
+    width: 140px;
+    height: 40px;
+    top: 72.5vh;
+}
+
+.base-f {
+    background-color: var(--base);
+    width: 140px;
+    height: 40px;
+    top: 71.5vh;
+}
+.base-g {
+    background-color: var(--basedark);
+    width: 110px;
+    height: 40px;
+    top: 70.5vh;
+}
+
+.base-h {
+    background-color: var(--base);
+    width: 110px;
+    height: 40px;
+    top: 69.5vh;
+}
+.base-A {
+    background-color: var(--basedark);
+    width: 80px;
+    height: 40px;
+    top: 68.5vh;
+}
+
+.base-B {
+    background-color: var(--base);
+    width: 80px;
+    height: 40px;
+    top: 67.5vh;
+}
+.base-D {
+    background-color: var(--basedark);
+    width: 50px;
+    height: 30px;
+    top: 67vh;
+}
+
+.base-E {
+    background-color: var(--base);
+    width: 50px;
+    height: 20px;
+    top: 66.8vh;
+}
+
+/* pushes */
+
+.bush {
+    display: flex;
+    justify-content: center;
+}
+
+.b-a {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 93vh;
+    background-color: var(--bush);
+    width: 80px;
+    height: 70px;
+    border-radius: 50%;
+    z-index: 4;
+}
+.b-b {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 92.5vh;
+    background-color: var(--bushdark);
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    z-index: 1;
+}
+.b-c {
+    position: absolute;
+    top: 30px;
+    background-color: var(--bushdark);
+    width: 100px;
+    height: 50px;
+    border-radius: 50%;
+    z-index: 1;
+}
+.b-d {
+    position: absolute;
+    top: 13px;
+    background-color: var(--bush);
+    width: 90px;
+    height: 60px;
+    border-radius: 50%;
+    z-index: 1;
+}
+
