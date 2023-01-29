@@ -23,7 +23,6 @@ body {
 
 .clouds {
     display: flex;
-    flex-wrap:wrap-reverse;
     gap: 70px;
     position: relative;
     justify-content: space-around;
@@ -38,14 +37,16 @@ body {
     width: 200px;
     height: 80px;
 }
+
 .c-a {
     bottom: 30px;
     position: relative;
     border-radius: 50%;
-    background-color:var(--clouddark) ;
+    background-color: var(--clouddark);
     width: 80px;
     height: 80px;
 }
+
 .c-b {
     position: absolute;
     bottom: 50px;
@@ -54,8 +55,9 @@ body {
     width: 100px;
     height: 100px;
 }
+
 .c-c {
-    
+
     position: relative;
     bottom: 30px;
     border-radius: 50%;
@@ -64,10 +66,61 @@ body {
     height: 80px;
 }
 
+
+@media screen and (max-width: 700px) {
+    .clouds {
+        display: flex;
+        flex-wrap: nowrap;
+        gap: 0px;
+        position: relative;
+    }
+    
+    .cloud {
+        display: flex;
+        justify-content: center;
+        border-radius: 50%;
+        position: relative;
+        top: 80px;
+        background-color: var(--clouddark);
+        width: 100px;
+        height: 50px;
+    }
+    .c-a {
+        left: 5px;
+        bottom: 10px;
+        position: relative;
+        border-radius: 50%;
+        background-color: var(--clouddark);
+        width: 40px;
+        height: 40px;
+    }
+
+    .c-b {
+        position: absolute;
+        bottom: 30px;
+        border-radius: 50%;
+        background-color: var(--clouddark);
+        width: 50px;
+        height: 50px;
+    }
+
+    .c-c {
+        right: 5px;
+        position: relative;
+        bottom: 10px;
+        border-radius: 50%;
+        background-color: var(--clouddark);
+        width: 40px;
+        height: 40px;
+    }
+
+}
+
+
 .trees {
     display: flex;
     position: relative;
-    bottom: 30vh ;
+    bottom: 10vh ;
     justify-content: space-evenly;
 }
 .tree {
